@@ -1,0 +1,34 @@
+<%-include('foxy/header.ejs')%>
+<link rel="stylesheet" href="/stylesheets/show.css">
+
+<%-include('foxy/nav.ejs')%>
+  <h1 id="ah1">AVIALABLE DATA</h1>
+
+  <div class="cont">
+  <%b.forEach((elem,index)=>{%>
+
+    <div class="cont1">
+
+    <div class="box11" style="background-image: url('<%=elem.image%>'); background-size: cover;">
+
+    </div>
+    <br>
+    <h2>Movie Name  : <%=elem.name%></h2>
+    <h2>Directed By : <%=elem.director%></h2>
+    <h2>Production  : <%=elem.production%></h2>
+    <h2>Year : <%=elem.year%></h2>
+    <h1></h1>
+    <h2>Download Link : <a href="<%=elem.download%>"><%=elem.download%></a> </h2>
+    <h2>Rating : <%=elem.rating%>⭐</h2>
+    <a href="/rg"><button>Registration Page</button></a> 
+    <a href="/details/<%=elem._id%>"><button>Explore More</button></a>
+    <h1>_____________________________</h1>
+
+ 
+</div>
+ <% })%>
+
+</div>
+
+
+<%-include('foxy/footer.ejs')%>

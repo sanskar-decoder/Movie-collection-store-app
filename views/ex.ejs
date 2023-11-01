@@ -1,0 +1,34 @@
+<%-include('foxy/header.ejs')%>
+<link rel="stylesheet" href="/stylesheets/show.css">
+
+<%-include('foxy/nav.ejs')%>
+  <h1 id="ah1">AVIALABLE DATA</h1>
+
+  <div class="cont">
+  
+
+    <div class="cont1">
+
+    <div class="box11" style="background-image: url('<%=s.image%>'); background-size: cover;">
+
+    </div>
+    <br>
+    <h2>Movie Name  : <%=s.name%></h2>
+    <h2>Directed By : <%=s.director%></h2>
+    <h2>Production  : <%=s.production%></h2>
+    <h2>Year : <%=s.year%></h2>
+    <h1></h1>
+    <h2>Download Link : <a href="<%=s.download%>"><%=s.download%></a> </h2>
+    <h2>Rating : <%=s.rating%>⭐</h2>
+    <a href="/delete/<%=s._id%>"><button>Delete</button></a> 
+    
+    <h1>_____________________________</h1>
+
+ 
+</div>
+
+
+</div>
+
+
+<%-include('foxy/footer.ejs')%>

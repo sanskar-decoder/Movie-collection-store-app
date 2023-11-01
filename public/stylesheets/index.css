@@ -1,0 +1,44 @@
+.box{
+    height: 550px;
+    width: 80%;
+    background-color: cyan;
+    margin:auto ;
+    transform: translateY(35px);
+    background-image: url('https://insidethemagic.net/wp-content/uploads/2020/11/AMC-theater-seating-700x300-1.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(13, 13, 13, 0.427);
+    
+}
+
+#ah1{
+    margin-top: 45px;
+    font-size: 42px;
+    font-family: monument;
+    color: lavenderblush;
+    text-transform: capitalize;
+    text-align: center;font-weight: 300;
+    letter-spacing: 2px;
+  
+}
+
+button{
+    font-family: Gilroy light;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding: 25px 45px;
+    border-radius: 14px;
+    border: none;
+    color: lavender;
+   background-color: red;
+  transform: translateX(505px) translateY(10px);
+
+}

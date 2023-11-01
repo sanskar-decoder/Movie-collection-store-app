@@ -1,0 +1,36 @@
+<%-include('foxy/header.ejs')%>
+<link rel="stylesheet" href="/stylesheets/rg.css">
+
+<%-include('foxy/nav.ejs')%>
+
+<h1 id="ah1">REGISTER YOUR FAVOURITE MOVIE</h1>
+<div class="cont">
+<form action="/rg" method="post">
+    <div class="cont1">
+    
+    <h2>Movie Name</h2>
+    <input type="text" name="name" placeholder="moviename">
+    <br><br>
+    <h2>Directed By</h2>
+    <input type="text" name="director" placeholder="directed by">
+    <br><br>
+    <h2>Production</h2>
+    <input type="text" name="production" placeholder="Production ">
+    <br><br>
+    <h2>Movie Image</h2>
+    <input type="url" name="image" placeholder="paste movie image url">
+    <br><br>
+    <h2>Directed Year</h2>
+    <input type="number" name="year" placeholder="Movie year" id="">
+    <br><br>
+    <h2>Movie Link</h2>
+    <input type="url" name="download" placeholder=" paste Download link ">
+    <br><br>
+    <h2>Rating</h2>
+    <input type="number" name="rating" placeholder="rate movie ">
+    <br><br>
+    <button>Register</button>
+</div>
+</form>
+</div>
+<%-include('foxy/footer.ejs')%>
